@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Pessoas</title>
+        <link rel="stylesheet" href="./forms.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="./img/ufop.png">
+            <h1>BANCO DE DADOS</h1>
+            <div class="flex">
+                <div>
+                    <a href="./index.html">Home</a>
+                </div>
+                <div>
+                    <a href="./pessoas.html">Pessoas</a>
+                </div>
+                <div>
+                    <a href="./estados.html">Estados</a>
+                </div>
+
+                <div>
+                    <a href="./cidades.html">Cidades</a>
+                </div>
+
+                <div>
+                    <a href="./produtos.html">Produtos</a>
+                </div>
+
+                <div>
+                    <a href="./perfil.html">Perfil</a>
+                </div>
+                
+                <div>
+                    <a href="./relatorio.html">Relatório</a>
+                </div>
+                
+                <div>
+                    <a href="#">Sair</a>
+                </div>
+            </div>
+        </header>
+        <br>
+        <h1>Cadastrar</h1>
+
+        <form method="GET" action="./validar.html">
+            <div class="controle">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome da pessoa">
+            </div>
+
+            <div class="controle">
+                <label for="nome">Usuário:</label>
+                <input type="text" name="user" id="user" placeholder="Usuário da pessoa">
+            </div>
+
+            <div class="controle">
+                <label for="nome">E-mail:</label>
+                <input type="text" name="email" id="email" placeholder="E-mail da pessoa">
+            </div>
+
+            <div class="controle">
+                <label>Genero:</label>
+                
+                <div>
+                    <input type="radio" name="genero" id="Masculino" value="H">
+                    <label for="Masculino">Masculino</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="genero" id="Feminino" value="F">
+                    <label for="Masculino">Feminino</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="genero" id="naobinario" value="NB">
+                    <label for="Masculino">Não binário</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="genero" id="semresposta" value="SR">
+                    <label for="semresposta">Prefiro não informar</label>
+                </div>
+
+            </div>
+
+            <input type="submit" value="Cadastrar" class="botton">
+            <input type="reset" value="Limpar" class="botton">
+            
+        </form>
+    </body>
+
+
+
+</html>
