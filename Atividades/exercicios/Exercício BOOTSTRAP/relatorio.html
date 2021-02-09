@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introdução ao bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="display-1">BANCO DE DADOS</h1>
+            <p class="lead">Implementação de bootstrap</p>
+        </div>
+
+        <a href="./index.html" class="btn btn-primary" >Home</a>
+        <a href="./pessoas.html"  class="btn btn-primary">Pessoas</a>
+        <a href="./estados.html" class="btn btn-primary">Estados</a>
+        <a href="./cidades.html" class="btn btn-primary">Cidades</a>
+        <a href="./produtos.html" class="btn btn-primary">Produtos</a>
+        <a href="./perfil.html" class="btn btn-primary">Perfil</a>
+        <a href="./relatorio.html" class="btn btn-info">Relatório</a>
+        <a href="#" class="btn btn-danger">Sair</a>
+        
+    </header>
+
+    <h2>Relatorio de cadastros</h2>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+
+                <caption>Cadastros</caption>
+
+                <thead>
+        
+                    <tr class="table-dark">
+                        <th>Nome</th>
+                        <th>Usuário</th>
+                        <th>E-mail</th>
+                        <th>Gênero</th>                
+                    </tr>
+        
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Pedro</td>
+                        <td>pedro.loures</td>
+                        <td>pedroloures@email.com</td>
+                        <td>Masculino</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Cláudio</td>
+                        <td>claudio.silva</td>
+                        <td>claudiosilva@email.com</td>
+                        <td>Masculino</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ericka</td>
+                        <td>ericka.costa</td>
+                        <td>erickacostas@email.com</td>
+                        <td>Feminino</td>
+                    </tr>
+
+                    <tr>
+                        <td>Matheus Fernandes</td>
+                        <td>matheus.fernandes</td>
+                        <td>matheusfernandes@email.com</td>
+                        <td>Não binário</td>
+                    </tr>
+        
+                </tbody>
+        
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td colspan="2">4</td>                
+                    </tr>
+                </tfoot>
+
+
+            </table>
+        </div>
+</body>
+</html>

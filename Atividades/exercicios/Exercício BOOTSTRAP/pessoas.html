@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pessoas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="display-1">BANCO DE DADOS</h1>
+            <p class="lead">Implementação de bootstrap</p>
+        </div>
+
+
+        <a href="./index.html" class="btn btn-primary" >Home</a>
+        <a href="./pessoas.html"  class="btn btn-info">Pessoas</a>
+        <a href="./estados.html" class="btn btn-primary">Estados</a>
+        <a href="./cidades.html" class="btn btn-primary">Cidades</a>
+        <a href="./produtos.html" class="btn btn-primary">Produtos</a>
+        <a href="./perfil.html" class="btn btn-primary">Perfil</a>
+        <a href="./relatorio.html" class="btn btn-primary">Relatório</a>
+        <a href="#" class="btn btn-danger">Sair</a>
+        
+    </header>
+    <form method="GET" action="./validar.html">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome da pessoa" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="nome">Usuário:</label>
+            <input type="text" name="user" id="user" placeholder="Usuário da pessoa" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="nome">E-mail:</label>
+            <input type="text" name="email" id="email" placeholder="E-mail da pessoa" class="form-control">
+        </div>
+
+        <div>
+            <label>Genero:</label>
+            
+            <div class="form-group form-check">
+                <input type="radio" name="genero" id="Masculino" value="H" class="form-check-input">
+                <label for="Masculino" class="form-check-label">Masculino</label>
+            </div>
+            
+            <div class="form-group form-check">
+                <input type="radio" name="genero" id="Feminino" value="F" class="form-check-input">
+                <label for="Masculino" class="form-check-label">Feminino</label>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="radio" name="genero" id="naobinario" value="NB" class="form-check-input">
+                <label for="Masculino" class="form-check-label">Não binário</label>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="radio" name="genero" id="semresposta" value="SR" class="form-check-input">
+                <label for="semresposta" class="form-check-label">Prefiro não informar</label>
+            </div>
+
+        </div>
+
+        <input type="submit" value="Cadastrar" class="btn btn-success">
+        <input type="reset" value="Limpar" class="btn btn-danger">
+        
+    </form>
+</body>
+</html>
