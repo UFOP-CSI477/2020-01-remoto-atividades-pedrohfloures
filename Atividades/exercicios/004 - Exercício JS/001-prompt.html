@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+            function pessoa(nome, idade, endereço)
+            {
+                this.nome = nome;
+                this.idade = idade;
+                this.endereço = endereço;
+            }
+            function solicitar()
+            {
+                nome = window.prompt("Digite o seu nome:");
+                idade = window.prompt("Digite sua idade:");
+                endereço = window.prompt("Digite seu endereço");
+
+                pessoa = new pessoa(nome,idade,endereço);
+
+                document.getElementById("nomes").innerHTML = pessoa.nome;
+                document.getElementById("idades").innerHTML = pessoa.idade;
+                document.getElementById("dados").innerHTML = pessoa.endereço;
+            }
+        </script>
+    </head>
+    <body>
+        
+        <input type="button" value="Cadastrar" onclick="solicitar()">
+
+        <div id="nomes"></div>
+        <div id="idades"></div>
+        <div id="dados"></div>
+        
+    </body>
+</html>
