@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBGE</title>
+</head>
+<body>
+    <form>
+        <input type="button" value="Carregar Dados" onclick="carregarRegioes()">
+
+        <select name="regioes" id="regioes" onchange="carregarEstados()">
+            <option value="">Selecione</option>
+        </select>
+        
+        <select name="estados" id="estados">
+            <option value="">Selecione</option>
+        </select>
+    </form>
+
+    <script src="api.js"></script>
+</body>
+</html>
