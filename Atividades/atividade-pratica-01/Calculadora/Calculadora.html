@@ -9,44 +9,41 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <form method="GET" action="./validar.html">
-        <div class="form-group">
-            <label for="numA">Número A:</label>
-            <input type="text" name="numA" id="numA" placeholder="Número A" class="form-control">
-        </div>
+    <h1>Calculadora</h1>
+    <h6>Para realizar o cálculo digite o primeiro número, a operação e o segundo número.</h6>
+    <br>
+    <br>
+    <div id="num1"></div>
+    <div id="op"></div>
+    <div id="num2"></div>
 
-        <div class="form-group">
-            <label for="numB">Número B:</label>
-            <input type="text" name="numB" id="numB" placeholder="Número B" class="form-control">
-        </div>
-
-        <div>
-            <label>Operação:</label>
-            
-            <div class="form-group form-check">
-                <input type="radio" name="operacao" id="Adicao" value="A" class="form-check-input">
-                <label for="Masculino" class="form-check-label">Adição</label>
-            </div>
-            
-            <div class="form-group form-check">
-                <input type="radio" name="operacao" id="Subtracao" value="S" class="form-check-input">
-                <label for="Masculino" class="form-check-label">Subtração</label>
-            </div>
-
-            <div class="form-group form-check">
-                <input type="radio" name="operacao" id="Multiplicacao" value="M" class="form-check-input">
-                <label for="Masculino" class="form-check-label">Multiplicação</label>
-            </div>
-
-            <div class="form-group form-check">
-                <input type="radio" name="operacao" id="Divisao" value="D" class="form-check-input">
-                <label for="semresposta" class="form-check-label">Divisão</label>
-            </div>
-        </div>   
+    <form method="GET">        
         <br>
-        <input type="button" value="Cadastrar" class="btn btn-success" onclick="calculo(numA.value, numB.value, operacao.value)">
-        <input type="reset" value="Limpar" class="btn btn-danger">
+        <input type="button" value="1" class="btn" onclick="calculo(1)">
+        <input type="button" value="2" class="btn" onclick="calculo(2)">
+        <input type="button" value="3" class="btn" onclick="calculo(3)">
+        <input type="button" value="+" class="btn" onclick="opera('+')">
+        <input type="button" value="*" class="btn" onclick="opera('*')">
+        <br>
+        <input type="button" value="4" class="btn" onclick="calculo(4)">
+        <input type="button" value="5" class="btn" onclick="calculo(5)">
+        <input type="button" value="6" class="btn" onclick="calculo(6)">
+        <input type="button" value="-" class="btn" onclick="opera('-')">
+        <input type="button" value="/" class="btn" onclick="opera('/')">
+        <br>
+        <input type="button" value="7" class="btn" onclick="calculo(7)">
+        <input type="button" value="8" class="btn" onclick="calculo(8)">
+        <input type="button" value="9" class="btn" onclick="calculo(9)">
+        <input type="button" value="." class="btn" onclick="calculo('.')">
+        <input type="button" value="=" class="btn btn-success" onclick="calcular()">
+        <br>
+        
+        <input type="button" value="Limpar" class="btn btn-danger" onclick="resetar()">
         
     </form>
+    <br>
+    <div id="resultado">
+
+    </div>
 </body>
 </html>
