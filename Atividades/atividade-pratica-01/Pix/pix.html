@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script type="text/javascript" src="./pix.js"></script>
+    <title>PIX</title>
+</head>
+<body>
+    <form method="GET" action="./validar.html">
+        <div>
+            <label>Chave:</label>
+            
+            <div class="form-group form-check">
+                <input type="radio" name="tipoChave" id="CPF" value="CPF" class="form-check-input">
+                <label for="Masculino" class="form-check-label">CPF</label>
+            </div>
+            
+            <div class="form-group form-check">
+                <input type="radio" name="tipoChave" id="CNPJ" value="CNPJ" class="form-check-input">
+                <label for="Masculino" class="form-check-label">CNPJ</label>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="radio" name="tipoChave" id="Email" value="E" class="form-check-input">
+                <label for="Masculino" class="form-check-label">E-mail</label>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="radio" name="tipoChave" id="Celular" value="C" class="form-check-input">
+                <label for="semresposta" class="form-check-label">Celular</label>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="radio" name="tipoChave" id="ChaveA" value="CA" class="form-check-input">
+                <label for="semresposta" class="form-check-label">Chave Aleatória</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="tempo">Chave:</label>
+            <input type="text" name="chave" id="chave" placeholder="Digite a chave PIX" class="form-control">
+        </div>
+
+        <div>
+            <label>Tipo de operação:</label>
+            
+            <div class="form-group form-check">
+                <input type="radio" name="operacao" id="Envio" value="E" class="form-check-input">
+                <label for="Masculino" class="form-check-label">Envio</label>
+            </div>
+            
+            <div class="form-group form-check">
+                <input type="radio" name="operacao" id="Recebimento" value="R" class="form-check-input">
+                <label for="Masculino" class="form-check-label">Recebimento</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="tempo">Valor:</label>
+            <input type="text" name="valor" id="valor" placeholder="Digite o valor" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="tempo">Data:</label>
+            <input type="text" name="data" id="data" placeholder="Digite a data" class="form-control">
+        </div>
+
+        <select name="banco" id="banco">
+            <option value="">Selecione o banco</option>
+        </select>
+        <input type="button" value="Carregar Bancos" onclick="carregarBancos()" class="btn">
+        <br>
+        <input type="button" value="Enviar" class="btn btn-success" onclick="operarPIX(valor.value, operacao.value)">
+        <input type="reset" value="Cancelar" class="btn btn-danger">
+        
+    </form>
+
+    <input type="button" value="Finalizar" onclick="relatorioPIX()" class="btn">
+
+    <div id="relatorio">
+
+    </div>
+</body>
+</html>

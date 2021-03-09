@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script type="text/javascript" src="./Corrida.js"></script>
+    <title>Corrida</title>
+</head>
+
+<body>
+    <form method="GET" action="./validar.html">
+        <div class="form-group">
+            <label for="competidor">Competidor:</label>
+            <input type="text" name="competidor" id="competidor" placeholder="Nome do competidor" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="tempo">Tempo:</label>
+            <input type="text" name="tempo" id="tempo" placeholder="Usuário da pessoa" class="form-control">
+        </div>
+        <br>
+        <input type="button" value="Cadastrar" class="btn btn-success" onclick="cadCompetidor(competidor.value, tempo.value)">
+        <input type="reset" value="Limpar" class="btn btn-danger">
+        
+    </form>
+    <br>
+
+    <div class="table-responsive">
+        <table id="tbCompetidores" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Largada</th>
+                    <th>Competidor</th>
+                    <th>Tempo (s)</th>
+                </tr>
+            </thead>      
+        </table>
+    </div>
+  
+    <input type="button" value="Ordenar" class="btn btn-success" onclick="calcResultado()">
+    
+
+    <br>
+    <br>
+    <div class="table-responsive">
+        <table id="tbResultado" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Largada</th>
+                    <th>Competidor</th>
+                    <th>Tempo (s)</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>      
+        </table>
+    </div>
+    <script src="./Corrida.js"></script>
+  </body>
+</html>
