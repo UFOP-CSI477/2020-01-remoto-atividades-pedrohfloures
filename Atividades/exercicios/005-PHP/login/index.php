@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/login/validar.php" method="post">
+    <form action="validar.php" method="post">
         <label for="user">Usuário</label>
         <input type="text" name="usuario" id="user">
         <label for="password">Senha</label>
