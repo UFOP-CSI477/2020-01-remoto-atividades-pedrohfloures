@@ -9,6 +9,7 @@
 </head>
 <body>
     
+    <a href="estadosViewInsert.php">Inserir</a>
     
     <form>
         <table class="table table-bordered table-hover">

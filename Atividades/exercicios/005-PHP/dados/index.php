@@ -1,15 +1,8 @@
  <?php
 
-    $dbfile = "./db/database.sqlite";
-    $dbuser = "";
-    $dbpassword = "";
-    $dbhost = "";
+   require 'connection.php';
 
-    $strConnection = "sqlite:" . $dbfile;
-
-    $connection = new PDO($strConnection, $dbuser, $dbpassword);
-
-    $estados = $connection->query("SELECT * FROM estados");
+   $estados = $connection->query("SELECT * FROM estados");
     
-    include 'estadosView.php';
+   include 'estadosView.php';
     
